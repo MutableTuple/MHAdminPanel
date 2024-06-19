@@ -64,20 +64,20 @@ const MENU_ITEMS = [
 	// },
 	{
 		key: 'apps-crm',
-		label: 'CRM',
+		label: 'Orders',
 		isTitle: false,
 		// badge: { variant: 'danger', text: 'New' },
 		icon: 'uil-tachometer-fast',
 		children: [
 			{
 				key: 'crm-projects',
-				label: 'Products',
-				url: '/apps/crm/projects',
+				label: 'Orders',
+				url: '/apps/ecommerce/orders',
 				parentKey: 'apps-crm',
 			},
 			{
 				key: 'crm-orders',
-				label: 'Orders List',
+				label: 'Orders Items',
 				url: '/apps/crm/orders',
 				parentKey: 'apps-crm',
 			},
@@ -89,7 +89,19 @@ const MENU_ITEMS = [
 			// },
 			{
 				key: 'crm-management',
-				label: 'Management',
+				label: 'Invoices',
+				url: '/apps/crm/management',
+				parentKey: 'apps-crm',
+			},
+			{
+				key: 'crm-payment',
+				label: 'Payments',
+				url: '/apps/crm/management',
+				parentKey: 'apps-crm',
+			},
+			{
+				key: 'crm-shipment',
+				label: 'Shipments',
 				url: '/apps/crm/management',
 				parentKey: 'apps-crm',
 			},
@@ -97,7 +109,7 @@ const MENU_ITEMS = [
 	},
 	{
 		key: 'apps-ecommerce',
-		label: 'Ecommerce',
+		label: 'Products',
 		isTitle: false,
 		icon: 'uil-store',
 		children: [
@@ -148,6 +160,53 @@ const MENU_ITEMS = [
 				label: 'Sellers',
 				url: '/apps/ecommerce/sellers',
 				parentKey: 'apps-ecommerce',
+			},
+		],
+	},
+	{
+		key: 'apps-bookmark',
+		label: 'Coupons',
+		isTitle: false,
+		icon: 'uil-store',
+		children: [
+			{
+				key: 'ecommerce-coupons-usage-logs',
+				label: 'Coupon usage logs',
+				url: '/apps/ecommerce/products',
+				parentKey: 'apps-coupon-logs',
+			},
+			{
+				key: 'ecommerce-discount-logs',
+				label: 'Discount Coupons',
+				url: '/apps/ecommerce/product-details',
+				parentKey: 'apps-coupons-discount',
+			},
+		],
+	},
+
+	{
+		key: 'apps-blogs',
+		label: 'Blogs',
+		isTitle: false,
+		icon: 'uil-book',
+		children: [
+			{
+				key: 'ecommerce-coupons-posts',
+				label: 'Posts',
+				url: '/apps/ecommerce/products',
+				parentKey: 'apps-coupon-logs',
+			},
+			{
+				key: 'ecommerce-coupons-topics',
+				label: 'Topics',
+				url: '/apps/ecommerce/products',
+				parentKey: 'apps-coupon-logs',
+			},
+			{
+				key: 'ecommerce-discount-images',
+				label: 'Images',
+				url: '/apps/ecommerce/product-details',
+				parentKey: 'apps-coupons-discount',
 			},
 		],
 	},
